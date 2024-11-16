@@ -3,13 +3,56 @@
 	box-sizing: border-box
 
 body
-	// font-family: 'Figtree', sans-serif
+	font-family: 'Inter', sans-serif
 	background-color: hsl(0, 0%, 8%)
 	min-height: 100vh
 	align-content: center
 
 .main-links
 	margin: auto
+	padding: 39px
 	width: 386px
 	height: 613px
 	background-color: hsl(0, 0%, 12%)
+	text-align: center
+	border-radius: 10px
+	color: white
+	font-size: 14px
+	font-weight: 600
+	&__photo
+		img
+			width: 93px
+			height: 93px
+			border-radius: 100px
+	&__title
+		margin-top: 29px
+		font-size: 22px
+		font-weight: 600
+	&__location
+		margin-top: 13px
+		color: hsl(75, 94%, 57%)
+	&__descr
+		margin-top: 28px
+		font-weight: 400
+	&__list
+		margin-top: 26px
+		display: flex
+		flex-direction: column
+		gap: 16px
+		list-style: none
+		padding: 0
+	&__item
+		min-width: 305px
+		min-height: 42px
+		background-color: hsl(0, 0%, 20%)
+		border-radius: 10px
+		align-content: center
+		&:hover
+			background-color: hsl(75, 94%, 57%)
+			a
+				color: hsl(0, 0%, 8%)
+		a
+			text-decoration: none
+			color: white
+			transition: color .2s ease
+
